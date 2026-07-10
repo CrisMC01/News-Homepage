@@ -54,7 +54,7 @@ button {
 }
 .navigation a{
     text-decoration: none;
-    color: var(--dark-blue);
+    color: var(--dark_blue);
     font-size: 0.875rem;
     transition: color 0.1s ease;
 }
@@ -67,9 +67,9 @@ button {
 }
 
 .menu-toggle:focus-visible {
-  outline: 2px solid var(--white);
-  outline-offset: 3px;
-  border-radius: 2px;
+  outline: 0.125rem solid var(--white);
+  outline-offset: 0.1875rem;
+  border-radius: 0.125rem;
 }
 
 /*=== MENU OVERLAY ===*/
@@ -120,38 +120,38 @@ button {
   align-items: center;
 }
 .menu-close:focus-visible {
-  outline: 2px solid var-(--red);
-  outline-offset: 3px;
-  border-radius: 2px;
+  outline: 0.125rem solid var(--red);
+  outline-offset: 0.1875rem;
+  border-radius: 0.125rem;
 }
 .menu-close img {
   inline-size: 1.7rem;
   block-size: auto;
 }
-.menu-panel nav ul {
+.mobile-navigation ul {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   list-style: none;
 }
-.menu-panel nav a {
+.mobile-navigation a {
  font-size: 1.125rem;
   text-decoration: none;
-  color: var(--dark-blue);
+  color: var(--dark_blue);
   transition: color 0.2s ease;
 }
-.menu-panel nav a:hover {
+.mobile-navigation a:hover {
   color: var(--red);
 }
-.menu-panel nav a:focus-visible {
-  outline: 2px solid var(--red);
-  outline-offset: 3px;
-  border-radius: 2px;
+.mobile-navigation a:focus-visible {
+  outline: 0.125rem solid var(--red);
+  outline-offset: 0.1875rem;
+  border-radius: 0.125rem;
 }
 
 .hero-image {
   margin: 1.5rem 0;
-  min-height:  300px;
+  min-height:  18.75rem;
   background-image: url('../assets/images/image-web-3-mobile.jpg');
   background-size: cover;     /* Ajusta la imagen al div */
   background-position: center;/* Centra la imagen */
@@ -207,10 +207,10 @@ button {
 }
 
 .btn-primary:focus-visible {
-  outline: 2px solid var(--dark);
-  outline-offset: 3px;
+  outline: 0.125rem solid var(--dark);
+  outline-offset: 0.1875rem;
 }
-.new-articles{
+.new-article{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -238,8 +238,8 @@ button {
 }
 
 .new-article h3 a:focus-visible {
-  outline: 2px solid var(--orange_100);
-  outline-offset: 3px;
+  outline: 0.125rem solid var(--orange_100);
+  outline-offset: 0.1875rem;
 }
 
 .new-article-text{
@@ -291,11 +291,11 @@ button {
     transition: color 0.2s ease;
 }
 .trending-article h3 a:hover {
-  color: var(--clr-red);
+  color: var(--red);
 }
 .trending-article h3 a:focus-visible {
-  outline: 2px solid var(--clr-red);
-  outline-offset: 3px;
+  outline: 0.125rem solid var(--red);
+  outline-offset: 0.1875rem;
 }
 .trending-article p{
     font-size: 0.9rem;
@@ -323,7 +323,7 @@ button {
 @media (min-width: 768px) {
     body{
     padding: 5rem 1rem;
-    max-width: 1110px; /* Ancho estándar para este diseño de Frontend Mentor */
+    max-width: 69.375rem; /* Ancho estándar para este diseño de Frontend Mentor */
     margin: 0 auto;
         
     }
@@ -342,7 +342,7 @@ button {
     background-image: url('../assets/images/image-web-3-desktop.jpg');
     background-size: cover;     /* Ajusta la imagen al div */
     background-position: center;/* Centra la imagen */
-    min-height: 300px;
+    min-height: 18.75rem;
     grid-row: 1;
   
   }
