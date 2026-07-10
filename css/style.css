@@ -5,6 +5,7 @@
     --blue : hsl(233, 8%, 79%);
     --dark_blue : hsl(236, 13%, 42%);
     --dark : hsl(240, 100%, 5%);
+    --overlay-bg: rgba(0, 0, 0, 0.5);
 }
 /*======== ELEMENTS ==================*/
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -89,7 +90,7 @@ button {
 .menu-backdrop {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: var(--overlay-bg); 
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -160,7 +161,7 @@ button {
 .hero-title{
     font-size: clamp(2.5rem, 8vw, 3.5rem);
     font-weight: 800;
-    margin-bottom: 1rem;
+    margin-block-end: 1rem;
     color: var(--dark);
     letter-spacing: 0.08rem;
     line-height: 1;
