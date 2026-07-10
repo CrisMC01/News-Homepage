@@ -210,7 +210,7 @@ button {
   outline: 0.125rem solid var(--dark);
   outline-offset: 0.1875rem;
 }
-.new-article{
+.new-articles{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
