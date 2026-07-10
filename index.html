@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <!--CSS FILE-->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body> 
+  <header class="site-header">
+    <!--MENU-->
+    <div class="menu">
+      <img src="assets/images/logo.svg">
+      <nav class="navigation" aria-label="Primary navigation">
+        <ul role="list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>   
+     <button class="menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation menu">
+      <img src="assets/images/icon-menu.svg" alt="" aria-hidden="true">
+     </button>
+     
+    </div>
+  </header>
+  <!--MENU OVERLAY --> 
+   <div
+    id="mobile-menu"
+    class="menu-overlay"
+    aria-hidden="true"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Navigation menu"
+  >
+    <!-- Fondo semitransparente (clic cierra el menú) -->
+    <div class="menu-backdrop" aria-hidden="true"></div>
+
+    <!-- Panel lateral -->
+    <div class="menu-panel">
+      <button
+        class="menu-close"
+        type="button"
+        aria-label="Close navigation menu"
+      >
+        <img src="assets/images/icon-menu-close.svg" alt="" aria-hidden="true">
+      </button>
+
+      <nav aria-label="Mobile navigation">
+        <ul role="list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!--MAIN CONTENT-->
+  <main id="main-content">
+    <div class="container">
+      <div class="main-grid">
+        <div class="hero-image">  
+        </div>
+        <div class="hero-body">
+          <h1 class="hero-title">The Bright Future of Web 3.0?</h1>
+          <div class="hero-aside">
+            <p>
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?
+            </p>
+            <a href="#" class="btn-primary">Read more</a>
+          </div>
+        </div>
+
+
+         <aside class="new-articles" aria-labelledby="new-heading">
+          <h2 class="new-heading">New</h2>
+
+          <article class="new-article">
+            <h3><a href="#">Hydrogen VS Electric Cars</a></h3>
+            <p class="new-article-text">Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </article>
+
+          <hr aria-hidden="true">
+
+          <article class="new-article">
+            <h3><a href="#">The Downsides of AI Artistry</a></h3>
+            <p class="new-article-text">What are the possible adverse effects of on-demand AI image generation?</p>
+          </article>
+
+          <hr aria-hidden="true">
+
+          <article class="new-article">
+            <h3><a href="#">Is VC Funding Drying Up?</a></h3>
+            <p class="new-article-text">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </article>
+        </aside>
+      </div>
+           <section class="trending" aria-labelledby="trending-heading">
+
+              <article class="trending-article">
+                <img
+                  src="assets/images/image-retro-pcs.jpg"
+                  alt="Close-up of a colorful retro computer keyboard"
+                  width="100"
+                  height="127"
+                >
+                <div class="trending-body">
+                  <span class="trending-number" aria-hidden="true">01</span>
+                  <h3><a href="#">Reviving Retro PCs</a></h3>
+                  <p>What happens when old PCs are given modern upgrades?</p>
+                </div>
+              </article>
+
+              <article class="trending-article">
+                <img
+                  src="assets/images/image-top-laptops.jpg"
+                  alt="A modern laptop open on a desk with a dark screen"
+            
+                >
+                <div class="trending-body">
+                  <span class="trending-number" aria-hidden="true">02</span>
+                  <h3><a href="#">Top 10 Laptops of 2022</a></h3>
+                  <p>Our best picks for various needs and budgets.</p>
+                </div>
+              </article>
+
+              <article class="trending-article">
+                <img
+                  src="assets/images/image-gaming-growth.jpg"
+                  alt="A pair of hands holding a video game controller"
+              
+                >
+                <div class="trending-body">
+                  <span class="trending-number" aria-hidden="true">03</span>
+                  <h3><a href="#">The Growth of Gaming</a></h3>
+                  <p>How the pandemic has sparked fresh opportunities.</p>
+                </div>
+              </article>
+          </section>  
+    </div> 
+  </main>
+<script src="js/menu.js"></script>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Cristina</a>.
+  </footer>
+</body>
+</html>
